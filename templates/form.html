@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1>{% block title %}test lol{% endblock %}</h1>
+<form method="POST" action="/">
+    <label for="name" name="name">hi</label>
+    <br>
+    <input type="text" name="name" value="{{ request.form['name'] }}">
+    <input type="submit" value="Go">
+</form>
+
+{% endblock %}
