@@ -95,7 +95,7 @@ marker_cluster = MarkerCluster(
 
 for index, location_info in dfObjetsInGare.iterrows():
   gare = 'style="text-align:center; font-weight: bold;">SNCF ' + str(location_info['Gare'])
-  url = "http://0.0.0.0:10000/gare/" + str(location_info['UIC'])
+  url = "https://lost-objects-map.onrender.com/gare/" + str(location_info['UIC'])
   
   #TODO: fix url_for problem & replace the string
   
