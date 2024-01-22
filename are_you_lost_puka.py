@@ -106,7 +106,7 @@ for index, location_info in dfObjetsInGare.iterrows():
   src="''' + url + '''">
   </iframe></div>'''
   
-  tt = '<h4 '+gare + '</h4><h5 style=\"text-align:center\">Objets trouvés: ' + str(location_info['Total']) + '</h5>'
+  tt = '<h4 '+gare + '</h4><h5 style=\"text-align:center\">Objets perdus: ' + str(location_info['Total']) + '</h5>'
   marker = folium.Marker([location_info["Latitude"], location_info["Longitude"]],
                 tooltip='<div style=\"margin:0px 1px\">{}</div>'.format(tt),
                 popup=folium.Popup(html, lazy=True),
