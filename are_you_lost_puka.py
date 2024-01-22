@@ -95,7 +95,9 @@ marker_cluster = MarkerCluster(
 
 for index, location_info in dfObjetsInGare.iterrows():
   gare = 'style="text-align:center; font-weight: bold;">SNCF ' + str(location_info['Gare'])
-  url = "http://127.0.0.1:5000/gare/" + str(location_info['UIC'])
+  url = "http://127.0.0.1:8000/gare/" + str(location_info['UIC'])
+  
+  #TODO: fix url_for problem & replace the string
   
   html = '<div style="position:relative; width: 500px; min-height:300px; max-height:1000px"><h3 '+gare + '''</h3><iframe
   id="inlineFrameExample"
