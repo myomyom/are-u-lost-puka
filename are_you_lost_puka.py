@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+#TODO = Only load are_you_lost_puka every midnight & update the json files once a day
+# but worker services are paid on render... AAAAAAAAAAAAH
 
 import pandas as pd
 import folium

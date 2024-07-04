@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from are_you_lost_puka import mapGare, fullList
+from are_you_lost_puka import mapGare, fullList, dateNow
 import secrets
 import datetime
 
@@ -16,10 +16,8 @@ csrf = CSRFProtect(app)
 
 @app.route("/")
 def home():
-    today = datetime.datetime.now()
-    today = today.strftime('%d %b %Y')
     mapGare.get_root().render() # render the map
-    return render_template('index.html', today=today)
+    return render_template('index.html', today=dateNow)
 
 @app.route("/map")
 def openMap():
