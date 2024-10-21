@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "flask": "^0.2.10",
     "idna": "^0.0.1",
     "jinja": "^0.13.4",
     "jinja2": "^0.0.1",
